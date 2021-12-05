@@ -1,6 +1,6 @@
 <template>
-<div id="nav" class="py-4 p-0 flex justify-end">
-    <div class="flex w-1/2 justify-end items-center list-none">
+  <div id="nav" class="py-4 p-0">
+    <!-- <div class="flex w-1/2 justify-between items-center list-none"> -->
     <!-- <ul class="flex">
       <li class="nav-item">
         <router-link to="/" class="px-3 py-2 flex items-center text-sm uppercase font-semibold leading-snug text-indigo-500 hover:opacity-75 active:text-black-700">Sender</router-link>
@@ -9,8 +9,8 @@
         <router-link to="/owner" class="px-3 py-2 flex items-center text-sm uppercase font-semibold leading-snug text-indigo-500 hover:opacity-75">Owner</router-link>
       </li>
     </ul> -->
+    <!-- </div> -->
     <Login :isSignedIn='isSignedIn' :accountName='accountName' :balance='accountBalance' v-on:signIn='signIn' v-on:signOut='signOut'/>
-    </div>
   </div>
   <div class="py-16 bg-gray-50 overflow-hidden lg:py-24">
     <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
